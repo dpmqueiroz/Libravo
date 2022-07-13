@@ -1,2 +1,7 @@
 Aqui vai um teste
+<<<<<<< HEAD
 inseri uma nova linha.
+=======
+inseri 
+(x) Não
+>>>>>>> 20c7c185274d9552d78a690727282e01a39cb148
