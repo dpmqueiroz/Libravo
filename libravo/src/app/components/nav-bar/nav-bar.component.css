@@ -5,6 +5,11 @@
   align-items: center;
   justify-content: space-around;
   height: 100px;
+  flex-wrap: wrap;
+}
+
+.opcoes{
+  justify-content: start;
 }
 
 .itemOpcao{
