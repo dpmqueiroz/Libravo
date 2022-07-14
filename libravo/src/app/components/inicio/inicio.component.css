@@ -1,0 +1,15 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.imagem{
+  justify-content: end;
+}
+
+.texto{
+  justify-content: start;
+  width: 40%;
+}
