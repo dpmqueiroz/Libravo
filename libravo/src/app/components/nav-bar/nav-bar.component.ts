@@ -13,7 +13,7 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  iniciaBotaoGoogle(){
+  redirecionaLogin(){
     window.location.href = "http://localhost:4200/login"
   }
 }
