@@ -19,7 +19,7 @@
 }
 
 .login{
-
+  text-decoration: none;
 }
 
 .redeSocial{
@@ -34,4 +34,5 @@ a:hover{
 
 img{
   height: 100px;
+  cursor: pointer;
 }
