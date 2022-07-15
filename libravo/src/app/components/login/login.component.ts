@@ -9,13 +9,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class LoginComponent implements OnInit {
 
-
-  constructor() {
-   }
-
-
-  ngOnInit(): void {
-
+  googleOneTapFunction(){
     function handleCredentialResponse(response: any) {
       console.log("Encoded JWT ID token: " + response.credential);
     }
@@ -24,7 +18,7 @@ export class LoginComponent implements OnInit {
       //@ts-ignore
       google.accounts.id.initialize({
         client_id: CLIENT_ID,
-        callback: handleCredentialResponse
+        callback: handleCredentialResponse,
       });
       //@ts-ignore
       google.accounts.id.renderButton(
@@ -34,7 +28,16 @@ export class LoginComponent implements OnInit {
       //@ts-ignore
       google.accounts.id.prompt(); // also display the One Tap dialog
     }
-
   }
+
+  constructor() {
+   }
+
+
+  ngOnInit(): void {
+    this.googleOneTapFunction();
+  }
+
+
 
 }
