@@ -1,3 +1,4 @@
+import { CLIENT_ID } from './../../../environments/environment.prod';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,12 +6,34 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+
 export class LoginComponent implements OnInit {
+
 
   constructor() {
    }
 
+
   ngOnInit(): void {
+
+    function handleCredentialResponse(response: any) {
+      console.log("Encoded JWT ID token: " + response.credential);
+    }
+    window.onload = function () {
+
+      //@ts-ignore
+      google.accounts.id.initialize({
+        client_id: CLIENT_ID,
+        callback: handleCredentialResponse
+      });
+      //@ts-ignore
+      google.accounts.id.renderButton(
+        document.getElementById("buttonDiv"),
+        { theme: "outline", size: "large" }  // customization attributes
+      );
+      //@ts-ignore
+      google.accounts.id.prompt(); // also display the One Tap dialog
+    }
 
   }
 
