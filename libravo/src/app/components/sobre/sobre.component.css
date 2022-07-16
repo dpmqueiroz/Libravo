@@ -1,0 +1,35 @@
+.container{
+  display: flex;
+  justify-content: center;
+  height: 0 auto;
+  width: 100%;
+  margin: 40px 0vh;
+}
+
+.container-filho{
+  padding: 5vh;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 50% 50%;
+  width: 80%;
+  background-color: #f2f2f2;
+  border-radius: 30px;
+}
+
+.imagem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+img{
+  width: 100%;
+}
