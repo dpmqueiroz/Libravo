@@ -1,3 +1,4 @@
+import { LoginComponent } from './../login/login.component';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -12,4 +13,7 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  redirecionaLogin(){
+    window.location.href = "http://localhost:4200/login"
+  }
 }

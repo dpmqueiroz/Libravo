@@ -19,7 +19,12 @@
 }
 
 .login{
+  color: inherit;
+  text-decoration: none;
+}
 
+.login::selection{
+  text-decoration: red;
 }
 
 .redeSocial{
@@ -34,4 +39,5 @@ a:hover{
 
 img{
   height: 100px;
+  cursor: pointer;
 }
