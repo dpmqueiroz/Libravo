@@ -1,24 +1,38 @@
 .container{
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
   align-items: center;
-  margin-top: 20px;
+  flex-wrap: nowrap;
+  gap: 10px;
   width: 100%;
-}
-.container-filho{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60%;
-  flex-wrap: wrap;
+  height: 90vh;
+  background: white url(../../../assets/fundo.jpeg) no-repeat;
+  background-size: cover;
 }
 
-.imagem{
-  justify-content: end;
+.conteudo{
+  padding: 50px;
   width: 50%;
+  justify-self: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  font-family: 'Roboto', sans-serif;
+  color: #f2f2f2;
 }
 
-.texto{
-  justify-content: stretch;
-  width: 50%;
+.conteudo h1{
+  margin-bottom: 25px;
+  font-size: 2.5rem;
 }
+
+.conteudo li{
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+.void{
+  height: 100vh;
+  width: 100%;
+  background-color: transparent;
+}
+

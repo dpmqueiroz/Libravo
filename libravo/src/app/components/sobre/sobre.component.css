@@ -4,6 +4,7 @@
   height: 0 auto;
   width: 100%;
   margin: 40px 0vh;
+  background-color: #f2f2f2;
 }
 
 .container-filho{
@@ -28,6 +29,7 @@
   text-align: justify;
   flex-wrap: nowrap;
   justify-content: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 img{
